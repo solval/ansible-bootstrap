@@ -1,0 +1,9 @@
+epel-release
+gcc
+openssl-devel
+python
+python-pip
+python-virtualenv
+redhat-rpm-config
+libselinux-python
+libyaml-devel

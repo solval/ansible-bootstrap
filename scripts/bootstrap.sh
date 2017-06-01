@@ -2,7 +2,7 @@
 #
 # Bootstrap ansible launcher virtualenv directory
 
-set -e; set -u
+set -e; set -u;
 
 if [ -f /etc/os-release ]; then
     . /etc/os-release
@@ -23,7 +23,7 @@ case $ID in
 ubuntu)
     [ -f "$aptreqs" ] && xargs -a <(awk '/^\s*[^#]/' $aptreqs) -r -- sudo -E apt -y install
     ;;
-fedora)
+fedora|centos)
     [ -f "$yumreqs" ] && xargs -a <(awk '/^\s*[^#]/' $yumreqs) -r -- sudo -E yum -y install
     ;;
 *)
