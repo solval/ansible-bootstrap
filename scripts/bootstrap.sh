@@ -17,6 +17,7 @@ yumreqs=${YUM_REQ_LIST:-requirements/$ID-$VERSION_ID.txt}
 pipreqs=${PIP_REQ_LIST:-requirements/python.txt}
 ansreqs=${ANS_REQ_LIST:-requirements/ansible.yml}
 venvdir=${VENV_DIR:-$working_dir/venv}
+roledir=${ROLE_DIR:-$working_dir/roles}
 
 # install required OS packages
 case $ID in
@@ -45,7 +46,7 @@ done
 
 # install required ansible roles
 for ansreq in $ansreqs; do
-  [ -f "$ansreqs" ] && ansible-galaxy install -c -p ${working_dir}/roles -r $ansreq
+  [ -f "$ansreqs" ] && ansible-galaxy install -c -p $ROLE_DIR -r $ansreq
 done
 
 # finalize
