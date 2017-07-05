@@ -46,7 +46,7 @@ done
 
 # install required ansible roles
 for ansreq in $ansreqs; do
-  [ -f "$ansreqs" ] && ansible-galaxy install -c -p $ROLE_DIR -r $ansreq
+  [ -f "$ansreqs" ] && ansible-galaxy install -c -p $roledir -r $ansreq
 done
 
 # finalize
