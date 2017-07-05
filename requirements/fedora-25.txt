@@ -1,7 +1,7 @@
-python-2.7.13-1.fc25
-python-pip-8.1.2-2.fc25
-python2-virtualenv-15.0.3-2.fc25
-openssl-devel-1:1.0.2k-1.fc25
-gcc-6.3.1-1.fc25
-redhat-rpm-config-45-1.fc25
-libselinux-python-2.5-13.fc25
+python-2.7.13
+python-pip-8.1.2
+python2-virtualenv-15.0.3
+openssl-devel-1:1.0.2k
+gcc-6.3.1
+redhat-rpm-config-45
+libselinux-python-2.5
