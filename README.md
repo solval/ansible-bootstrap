@@ -14,8 +14,7 @@ or by using your own, setting env variables.
 
 Default setup can be tweaked using shell environment variables:
 ```bash
-$APT_REQ_LIST (defaults to requirements/$ID-$VERSION_ID.txt - as per /etc/os-release)
-$YUM_REQ_LIST (defaults to requirements/$ID-$VERSION_ID.txt - as per /etc/os-release)
+$PKG_REQ_LIST (defaults to requirements/$ID-$VERSION_ID.txt - as per /etc/os-release)
 $PIP_REQ_LIST (defaults to requirements/python.txt)
 $ANS_REQ_LIST (defaults to requirements/ansible.yml)
 $VENV_DIR (defaults to $(pwd)/venv)
