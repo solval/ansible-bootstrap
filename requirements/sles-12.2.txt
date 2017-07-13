@@ -1,0 +1,4 @@
+python-virtualenv
+python-setuptools
+python-devel
+libopenssl-devel

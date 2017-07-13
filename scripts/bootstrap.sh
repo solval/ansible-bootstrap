@@ -26,6 +26,9 @@ ubuntu|debian)
 fedora|centos)
     [ -f "$pkgreqs" ] && xargs -a <(awk '/^\s*[^#]/' $pkgreqs) -r -- sudo -E yum -y install
     ;;
+sles|opensuse)
+    [ -f "$pkgreqs" ] && xargs -a <(awk '/^\s*[^#]/' $pkgreqs) -r -- sudo -E zypper install -y
+    ;;
 *)
     echo "ERROR: OS $ID not yet supported, exiting."
     exit 1
