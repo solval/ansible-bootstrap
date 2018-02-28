@@ -1,0 +1,5 @@
+python-virtualenv
+python-setuptools
+python-devel
+libopenssl-devel
+libffi48-devel
